@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: o;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cont-grid{
+    display: grid;
+    margin: 0 auto;
+    height: 600px ;
+}
+    .cont-grid{
+    grid-template-areas: 
+    'logo        titulo' 
+    'menu        menu '  
+    'slide       carrucel '
+    'infcarrucel infcarrucel'
+    'imagen      imagen '
+    'video       video'
+    'derechos    derechos'   
+    ;
+    gap: 0.1em ;
+    row-gap: 3px;
+    column-gap: 5px;
+    background: rgb(248, 247, 247);
+    }
+    .contenido:nth-child(1){
+        background-color: orangered;
+        grid-area: logo;
+          
+    }
+    .contenido:nth-child(2){
+        background-color:  rgb(156, 19, 156);
+        grid-area: titulo;
+        
+    }
+    .contenido:nth-child(3){
+        background-color: rgb(59, 57, 59);   
+        grid-area: menu;
+    
+    }
+    .contenido:nth-child(4){
+        background-color: rgba(5, 49, 247, 0.548);
+        grid-area: slide;   
+    
+    }
+    .contenido:nth-child(5){
+        background-color: rgb(228, 34, 99);
+        grid-area: carrucel;
+    
+    }   
+    .contenido:nth-child(6){
+        background-color: rgb(30, 238, 238);
+        grid-area: infcarrucel;
+    }
+    .contenido:nth-child(7){
+        background-color: rgb(228, 243, 15);
+        grid-area: imagen;
+        
+    }
+    .contenido:nth-child(8){
+        background-color: rgb(8, 218, 8);
+        grid-area: video;
+    }
+    
+    .contenido:nth-child(9){
+        background-color: red;
+        grid-area: derechos;
+        
+    }
+
+@media screen and (min-width:577px) {
+    .cont-grid{
+    grid-template-areas: 
+    'logo        titulo    titulo      titulo' 
+    'menu        menu      menu        menu'  
+    'slide       slide     slide       slide'
+    'carrucel    carrucel  infcarrucel infcarrucel'
+    'imagen      imagen    video       video'
+    'derechos    derechos  derechos    derechos'   
+    ;
+    gap: 0.1em ;
+    row-gap: 3px;
+    column-gap: 5px;
+    background: rgb(253, 252, 252);
+    }
+.contenido:nth-child(1){
+    background-color: orangered;
+    grid-area: logo;
+      
+}
+.contenido:nth-child(2){
+    background-color:  rgb(156, 19, 156);
+    grid-area: titulo;
+    
+}
+.contenido:nth-child(3){
+    background-color: rgb(59, 57, 59);   
+    grid-area: menu;
+
+}
+.contenido:nth-child(4){
+    background-color: rgba(5, 49, 247, 0.548);
+    grid-area: slide;   
+
+}
+.contenido:nth-child(5){
+    background-color: rgb(228, 34, 99);
+    grid-area: carrucel;
+
+}   
+.contenido:nth-child(6){
+    background-color: rgb(30, 238, 238);
+    grid-area: infcarrucel;
+}
+.contenido:nth-child(7){
+    background-color: rgb(228, 243, 15);
+    grid-area: imagen;
+    
+}
+.contenido:nth-child(8){
+    background-color: rgb(8, 218, 8);
+    grid-area: video;
+}
+
+.contenido:nth-child(9){
+    background-color: red;
+    grid-area: derechos;
+    
+}
+}
+@media screen and (min-width:769px) {
+    .cont-grid{
+    grid-template-areas: 
+    'logo       logo          titulo        titulo'
+    'menu       menu          titulo        titulo'
+    'slide      carrucel      carrucel       carrucel'
+    'slide      infcarrucel   infcarrucel    infcarrucel'
+    'slide      imagen        imagen         imagen'
+    'slide      video         video         video'
+    'derechos   derechos      derechos      derechos'
+    ;
+    gap: 0.1em ;
+    row-gap: 3px;
+    column-gap: 5px;
+    background: rgb(252, 250, 250);
+    }
+.contenido:nth-child(1){
+    background-color: orangered;
+    grid-area: logo;
+      
+}
+.contenido:nth-child(2){
+    background-color:  rgb(156, 19, 156);
+    grid-area: titulo;
+    
+}
+.contenido:nth-child(3){
+    background-color: rgb(59, 57, 59);   
+    grid-area: menu;
+
+}
+.contenido:nth-child(4){
+    background-color: rgba(5, 49, 247, 0.548);
+    grid-area: slide;   
+
+}
+.contenido:nth-child(5){
+    background-color: rgb(228, 34, 99);
+    grid-area: carrucel;
+}   
+.contenido:nth-child(6){
+    background-color: rgb(30, 238, 238);
+    grid-area: infcarrucel;
+}
+.contenido:nth-child(7){
+    background-color: rgb(228, 243, 15);
+    grid-area: imagen;
+    
+}
+.contenido:nth-child(8){
+    background-color: rgb(8, 218, 8);
+    grid-area: video;
+}
+.contenido:nth-child(9){
+    background-color: red;
+    grid-area: derechos;
+    }
+}
